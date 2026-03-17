@@ -51,9 +51,9 @@ app.use('/api/auth', authLimiter);
 // GENERAL MIDDLEWARE
 // ============================================
 
-// CORS configuration
+// CORS configuration 
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:3000',
+  origin: '*', // Hamma joydan so'rov qabul qilish uchun
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
   allowedHeaders: ['Content-Type', 'Authorization']
