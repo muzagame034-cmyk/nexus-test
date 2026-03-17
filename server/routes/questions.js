@@ -12,7 +12,7 @@ const {
 } = require('../controllers/questionController');
 
 // Public - get questions for test
-router.get('/test/:category', protect, getTestQuestions);
+router.get('/test/:category', getTestQuestions);
 
 // Admin only routes
 router.get('/', protect, restrictTo('admin'), getAllQuestions);
