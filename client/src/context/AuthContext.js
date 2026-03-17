@@ -11,7 +11,7 @@ import toast from 'react-hot-toast';
 const AuthContext = createContext(null);
 
 // Configure axios defaults
-const API = axios.create({ baseURL: '/api' });
+const API = axios.create({ baseURL: 'https://nexus-test-tnx7.onrender.com/api' });
 
 // Add token to every request
 API.interceptors.request.use((config) => {
